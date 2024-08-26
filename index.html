@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./components/img/nav-icon.png" sizes="32x32">
+    <title>Dasamuka</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- script -->
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./components/status-polkadot.mjs"></script>
+    <script src="./components/text-animation.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="nav">
+        <a id="link_logo" href="#home"><img id="logo" src="./components/img/head-icon.png"></a>
+        <ul>
+            <!-- <li><a href="#home">Home</a></li> -->
+            <!-- <li><a href="#projects">Projects</a></li> -->
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#">Docs</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- Project -->
+    <section id="projects">
+        <h1>Projects Supported</h1>
+        <!-- Tab links -->
+        <div class="tab buttons">
+            <button id="Testnetbtn" class="secondary outline tablinks" onclick="opentab(event, 'Testnet')">Testnet</button>
+            <button id="Mainnetbtn" class="secondary outline tablinks" onclick="opentab(event, 'Mainnet')">Mainnet</button>
+        </div>
+        <!-- Tab content -->
+        <div id="Testnet" class="tabcontent">
+
+            <!-- ario -->
+            <div id="ario" class="card">
+                <div class="status"></div>
+                <img class="projectImg" src="./components/img/project-logo/ario.png" alt="ario">
+                <div class="projectStatus">
+                    <h4><b>ario <br class="line"> arweave gateways</b></h4>
+                    <div class="buttons cardButton">
+                        <a href="https://ar.io" target="_blank"><button class="secondary outline">Website</button></a>
+                        <a href="https://network-portal.app/#/gateways/ZNsUG7VnUdL8-jAChetRPbGwfwD4RFDU1_jA0bsFzLc" target="_blank"><button class="secondary outline">Stake</button></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Emperia -->
+            <div id="empe" class="card">
+                <div class="status"></div>
+                <img class="projectImg" src="./components/img/project-logo/empe.png">
+                <div class="projectStatus">
+                    <h4><b>empeiria <br> IBC </b></h4>
+                    <div class="buttons cardButton">
+                        <a href="https://empe.io" target="_blank"><button class="secondary outline">Website</button></a>
+                        <a href="#" target="_blank"><button class="secondary outline">Stake</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Symphony -->
+            <div id="symphony" class="card">
+                <div class="status"></div>
+                <img class="projectImg" src="./components/img/project-logo/symphony.png">
+                <div class="projectStatus">
+                    <h4><b>Symphony <br> IBC </b></h4>
+                    <div class="buttons cardButton">
+                        <a href="https://orchestralabs.org/" target="_blank"><button class="secondary outline">Website</button></a>
+                        <a href="#" target="_blank"><button class="secondary outline">Stake</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entangle -->
+            <div id="entangle" class="card">
+                <div class="status"></div>
+                <img class="projectImg" src="./components/img/project-logo/entangle.jpg">
+                <div class="projectStatus">
+                    <h4><b>Entangle <br> IBC </b></h4>
+                    <div class="buttons cardButton">
+                        <a href="https://entangle.fi" target="_blank"><button class="secondary outline">Website</button></a>
+                        <a href="#" target="_blank"><button class="secondary outline">Stake</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tangle -->
+            <div id="tangle" class="card">
+                <div class="status"></div>
+                <img class="projectImg" src="./components/img/project-logo/tangle.jpg">
+                <div class="projectStatus">
+                    <h4><b>Entangle <br> Subtrate </b></h4>
+                    <div class="buttons cardButton">
+                        <a href="https://tangle.tools" target="_blank"><button class="secondary outline">Website</button></a>
+                        <a href="#" target="_blank"><button class="secondary outline">Stake</button></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Selfchain -->
+            <div id="selfchain" class="card">
+                <div class="status"></div>
+                <img class="projectImg" src="./components/img/project-logo/selfchain.jpg">
+                <div class="projectStatus">
+                    <h4><b>Selfchain <br> IBC </b></h4>
+                    <div class="buttons cardButton">
+                        <a href="https://selfchain.xyz" target="_blank"><button class="secondary outline">Website</button></a>
+                        <a href="#" target="_blank"><button class="secondary outline">Stake</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mainnet -->
+        <div id="Mainnet" class="tabcontent">
+            <h3><span class="typing-text"></span></h3>
+        </div>
+    </section>
+
+    <!-- About -->
+    <div id="about">
+        <h1 >About</h1>
+        <p>Dasamuka</p>
+        <p>Independent Node Operator</p>
+        <div class="social-icons">
+            <a href="https://github.com/buris13" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://discord.com/users/dasa10" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://twitter.com/bawaperut" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <b>2024</b>
+        <b>Dasamuka</b>
+    </div>
+
+</body>
+
+</html>
