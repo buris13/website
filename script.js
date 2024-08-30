@@ -94,7 +94,7 @@ getValidatorStatus(symphonyElement, symphonyUrl, symphonyValoper).then(status =>
 
 // Entangle
 const entangleElement = '#entangle .status';
-const entangleUrl = 'https://api-t.entangle.nodestake.top/cosmos/staking/v1beta1/validators/';
+const entangleUrl = 'https://entangle.api.moonbridge.team/cosmos/staking/v1beta1/validators/';
 const entangleValoper = 'entvaloper1znzcuu2k795pr3ahhn2nptnvt6trfwec7kt2gx'
 getValidatorStatus(entangleElement, entangleUrl, entangleValoper).then(status => {
   console.log(`Validator is currently ${status}`);
@@ -112,7 +112,7 @@ getValidatorStatus('#selfchain .status', 'https://api-devnet.selfchain.xyz', 'se
 async function getGatewayStatus(elementStatus) {
   const statusElement = document.querySelectorAll(elementStatus);
   try {
-    const gatewayLink = 'https://dasamuka.cloud/ar-io/info';
+    const gatewayLink = 'https://ario.dasamuka.xyz/ar-io/info';
     const response = await axios.get(gatewayLink);
     const responseStatus = response.status;
     console.log(response.status);
