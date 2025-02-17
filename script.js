@@ -100,6 +100,14 @@ getValidatorStatus(entangleElement, entangleUrl, entangleValoper).then(status =>
   console.log(`Validator is currently ${status}`);
 });
 
+// Union
+const unionElement = '#union .status';
+const unionUrl = 'https://rest.testnet-9.union.build/cosmos/staking/v1beta1/validators/';
+const unionValoper = 'unionvaloper1exwm29uc5myasktuv4fe2sgcj4lsvtp04d5hsw'
+getValidatorStatus(unionElement, unionUrl, unionValoper).then(status => {
+  console.log(`Validator is currently ${status}`);
+});
+
 // Selfchain
 getValidatorStatus('#selfchain .status', 'https://api-devnet.selfchain.xyz', 'selfvaloper1znzcuu2k795pr3ahhn2nptnvt6trfwec7kt2gx')
 
