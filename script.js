@@ -15,7 +15,7 @@ function opentab(event, tabName) {
   document.getElementById(tabName).style.display = "flex";
   event.currentTarget.className += " active";
 }
-document.getElementById("Testnetbtn").click();
+document.getElementById("Mainnetbtn").click();
 
 // Div Order
 document.addEventListener("DOMContentLoaded", sortDivs);

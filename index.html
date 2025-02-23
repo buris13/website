@@ -33,16 +33,17 @@
         <h1>Projects Supported</h1>
         <!-- Tab links -->
         <div class="tab buttons">
-            <button id="Testnetbtn" class="secondary outline tablinks" onclick="opentab(event, 'Testnet')">Testnet</button>
             <button id="Mainnetbtn" class="secondary outline tablinks" onclick="opentab(event, 'Mainnet')">Mainnet</button>
+            <button id="Testnetbtn" class="secondary outline tablinks" onclick="opentab(event, 'Testnet')">Testnet</button>
         </div>
         <!-- Tab content -->
-        <div id="Testnet" class="tabcontent">
 
+        <!-- Mainnet -->
+        <div id="Mainnet" class="tabcontent">
             <!-- ario -->
             <div id="ario" class="card">
                 <div class="status"></div>
-                <img class="projectImg" src="./components/img/project-logo/ario.png" alt="ario">
+                <img class="projectImg" src="./components/img/project-logo/ario.png" alt="ario"> 
                 <div class="projectStatus">
                     <h4><b>ario <br class="line"> arweave gateways</b></h4>
                     <div class="buttons cardButton">
@@ -51,7 +52,22 @@
                     </div>
                 </div>
             </div>
-            
+        </div>
+
+	<!---- Testnet ----!>
+        <div id="Testnet" class="tabcontent">
+            <div id="ario-testnet" class="card">
+                <div class="status"></div>
+                <img class="projectImg" src="./components/img/project-logo/ario.png" alt="ario"> 
+                <div class="projectStatus">
+                    <h4><b>ario <br class="line"> arweave gateways</b></h4>
+                    <div class="buttons cardButton">
+                        <a href="https://ar.io" target="_blank"><button class="secondary outline">Website</button></a>
+                        <a href="https://network-portal.app/#/gateways/ZNsUG7VnUdL8-jAChetRPbGwfwD4RFDU1_jA0bsFzLc" target="_blank"><button class="secondary outline">Stake</button></a>
+                    </div>
+                </div>
+            </div>
+
             <!-- Emperia -->
             <div id="empe" class="card">
                 <div class="status"></div>
@@ -131,10 +147,6 @@
             </div>
         </div>
 
-        <!-- Mainnet -->
-        <div id="Mainnet" class="tabcontent">
-            <h3><span class="typing-text"></span></h3>
-        </div>
     </section>
 
     <!-- About -->
