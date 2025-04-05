@@ -86,7 +86,7 @@ getValidatorStatus(empeElement, empeUrl, empeValoper).then(status => {
 
 //Symphony
 const symphonyElement = '#symphony .status';
-const symphonyUrl = 'https://symphony-api.kleomedes.network/cosmos/staking/v1beta1/validators/';
+const symphonyUrl = 'https://api-symphonyd.vinjan.xyz/cosmos/staking/v1beta1/validators/';
 const symphonyValoper = 'symphonyvaloper1znzcuu2k795pr3ahhn2nptnvt6trfwec7kt2gx'
 getValidatorStatus(symphonyElement, symphonyUrl, symphonyValoper).then(status => {
   console.log(`Validator is currently ${status}`);
