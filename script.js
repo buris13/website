@@ -56,7 +56,7 @@ async function getValidatorStatus(elementStatus, apiUrl, validatorAddress) {
           statusElement.innerHTML = `<b class='textStatus'>Online</b>`;
         });
         return 'online';
-      } else if (validator.jailed === false && validator.status === 'BOND_STATUS_UNBONDING') {
+      } else if (validator.jailed === false && validator.status === 'BOND_STATUS_UNBONDING' || validator.status === 'BOND_STATUS_UNBONDED') {
           statusElement.forEach((statusElement) => {
             statusElement.style.backgroundColor = '#4891f0';
             statusElement.innerHTML = `<b class='textStatus'>Inactive</b>`;
@@ -110,6 +110,9 @@ getValidatorStatus(unionElement, unionUrl, unionValoper).then(status => {
 
 // Selfchain
 getValidatorStatus('#selfchain .status', 'https://api-devnet.selfchain.xyz', 'selfvaloper1znzcuu2k795pr3ahhn2nptnvt6trfwec7kt2gx')
+
+// Kiichain
+getValidatorStatus('#kiichain .status', 'https://lcd.uno.sentry.testnet.v3.kiivalidator.com/cosmos/staking/v1beta1/validators/', 'kiivaloper1ns5mz4jcfgu8c9l7g4vcgg98l28anhkucgy3xk')
 
 //
 
