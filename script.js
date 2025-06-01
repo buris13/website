@@ -114,7 +114,8 @@ getValidatorStatus('#selfchain .status', 'https://api-devnet.selfchain.xyz', 'se
 // Kiichain
 getValidatorStatus('#kiichain .status', 'https://lcd.uno.sentry.testnet.v3.kiivalidator.com/cosmos/staking/v1beta1/validators/', 'kiivaloper1ns5mz4jcfgu8c9l7g4vcgg98l28anhkucgy3xk')
 
-//
+// Daodiseo
+getValidatorStatus('#daodiseo .status', 'https://daodiseo.t-api.dasamuka.xyz/cosmos/staking/v1beta1/validators/', 'odiseovaloper1zc850492w4dhmhfgkdnvml789z0a9rw8fg3rxq')
 
 
 // ----- End of Cosmos -----//
