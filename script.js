@@ -124,7 +124,7 @@ getValidatorStatus('#daodiseo .status', 'https://daodiseo.t-api.dasamuka.xyz/cos
 async function getGatewayStatus(elementStatus) {
   const statusElement = document.querySelectorAll(elementStatus);
   try {
-    const gatewayLink = 'https://ario.dasamuka.xyz/ar-io/info';
+    const gatewayLink = 'https://ario.dasamuka.org/ar-io/info';
     const response = await axios.get(gatewayLink);
     const responseStatus = response.status;
     console.log(response.status);
